@@ -52,17 +52,17 @@ var employees = [
 
 //Code Here
 function employeeUpdater(){
-  alert(employees[0].firstName);
+  
   for(let i = 0; i < employees.length; i++){
-    
+  
     if(employees[i].firstName === "Theo"){
-      delete employees[i];
+      employees.splice(i, 1);
     }
     if(employees[i].firstName === "Lorie"){
       employees[i].department = "HR";
     }
   }
-  alert(employees);
+
   return employees;
 }
 
